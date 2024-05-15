@@ -1,7 +1,8 @@
 {
   "trailingComma": "es5",
   "tabWidth": 2,
-  "semi": false,
+  "useTabs": true,
+  "semi": true,
   "singleQuote": true,
   "quoteProps": "preserve",
   "arrowParens": "always",
@@ -9,5 +10,6 @@
   "jsxBracketSameLine": false,
   "proseWrap": "never",
   "htmlWhitespaceSensitivity": "strict",
-  "endOfLine": "lf"
+  "endOfLine": "auto",
+  "singleAttributePerLine": false
 }
