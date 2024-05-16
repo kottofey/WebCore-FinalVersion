@@ -2,7 +2,6 @@ const moreBtn = document.querySelector('.brands-repair-list__more-btn');
 const list = document.querySelector('.brands-repair-list__wrapper');
 
 const createMoreBtnHandler = function (button) {
-
 	button.addEventListener('click', function () {
 		let isExpanded = moreBtn.classList.contains('brands-repair-list__less-btn');
 
@@ -15,8 +14,7 @@ const createMoreBtnHandler = function (button) {
 			moreBtn.textContent = 'Показать все';
 		}
 	});
-
-}
+};
 
 if (window.innerWidth >= 768) {
 	createMoreBtnHandler(moreBtn);

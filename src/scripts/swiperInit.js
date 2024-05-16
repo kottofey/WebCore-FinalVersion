@@ -6,18 +6,18 @@ import 'swiper/css/pagination';
 if (window.innerWidth <= 767) {
 	let wrapper = document.querySelector('.brands-repair-list__wrapper');
 	wrapper.classList.add('swiper-wrapper');
-	wrapper.classList.remove('brands-repair-list__wrapper')
+	wrapper.classList.remove('brands-repair-list__wrapper');
 
 	document.querySelector('.swiper-pagination').hidden = false;
 
-const swiper = new Swiper(".brands-repair-list", {
-		modules: [ Pagination ],
-		direction: "horizontal",
+	const swiper = new Swiper('.brands-repair-list', {
+		modules: [Pagination],
+		direction: 'horizontal',
 		slidesOffsetBefore: 16,
 		slidesOffsetAfter: 16,
-		slideClass: "brands-repair-list__card",
+		slideClass: 'brands-repair-list__card',
 		pagination: {
-			el: ".swiper-pagination",
+			el: '.swiper-pagination',
 		},
 		spaceBetween: 16,
 
@@ -25,5 +25,5 @@ const swiper = new Swiper(".brands-repair-list", {
 		// depending on screen width on document load
 		// slidesPerView = (screen width + spaceBetween) / scroll distance
 		slidesPerView: (window.innerWidth + 16) / (224 + 16),
-	})
+	});
 }
