@@ -1,0 +1,11 @@
+.lang-switch {
+
+	&__item {
+		appearance: none;
+		position: absolute;
+	}
+
+	&__item:checked + &__label--text {
+		color: $gray;
+	}
+}

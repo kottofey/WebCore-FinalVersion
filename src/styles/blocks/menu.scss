@@ -1,0 +1,167 @@
+.menu {
+	display: flex;
+
+	&--header-menu {
+		border-bottom: 1px $lighter-green solid;
+		background-color: $white;
+
+		@media screen and (width >= 1120px) {
+				height: 92px;
+				border-bottom: none;
+			}
+	}
+
+	&__header-item {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		height: 88px;
+		margin-right: 16px;
+
+		&--title {
+			display: none;
+
+			@media screen and (width >= 1120px) {
+				display: block;
+				margin-right: 8px;
+			}
+		}
+
+		&--push-right {
+			margin-left: auto;
+		}
+
+		&--push-down {
+			margin-top: auto;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&--button {
+			width: 40px;
+			height: 40px;
+			border: none;
+			background-color: transparent;
+			transition-property: opacity, transform;
+			transition-duration: 300ms;
+
+			&:hover {
+				opacity: 0.7;
+				transform: scale(1.1);
+			}
+
+		}
+
+		&--button-call {
+			background-image: url("../imgs/ic/ic_call.svg");
+		}
+
+		&--button-chat {
+			background-image: url("../imgs/ic/ic_chat.svg");
+		}
+
+		&--button-profile {
+			background-image: url("../imgs/ic/ic_profile.svg");
+		}
+
+		&--button-repair {
+			background-image: url("../imgs/ic/ic_repair.svg");
+		}
+
+		&--button-search {
+			background-image: url("../imgs/ic/ic_search.svg");
+		}
+
+		&--button-checkstatus {
+			background-image: url("../imgs/ic/ic_checkstatus.svg");
+		}
+
+		&--button-burger {
+			background-image: url("../imgs/ic/ic_burger.svg");
+		}
+
+		&--no-right-margin {
+			margin-right: 0;
+		}
+
+		&--no-bottom-margin {
+			margin-bottom: 0;
+		}
+
+		&--divider {
+			display: flex;
+			width: 2px;
+			height: 32px;
+			margin-top: auto;
+			margin-bottom: auto;
+			border: 1px $light-gray solid;
+			border-radius: 1px;
+		}
+
+		&--hide-on-desktop {
+			@media screen and (width >= 1120px) {
+				display: none !important;
+			}
+		}
+	}
+// end of .header-item
+
+
+	&--active-item {
+		border: 2px $lighter-green solid;
+		border-radius: 5px;
+		background-color: $white;
+	}
+
+	&--fading:before {
+		position: absolute;
+		right: 0;
+		width: 24px;
+		height: 40px;
+		content: "";
+		background: linear-gradient(270.00deg, $gray-lighter 16.836%, $gray-lighter-transparent 100%);
+
+		@media screen and (width >= 1120px) {
+			display: none;
+		}
+	}
+
+	&--left-side {
+		display: flex;
+		margin-right: auto;
+		margin-left: 16px;
+
+		@media screen and ($screen-m <= width) and (width < $screen-l) {
+			margin-right: auto;
+			margin-left: 24px;
+		}
+
+		@media screen and (width >= 1120px) {
+			margin-right: 595px;
+			margin-left: 24px;
+		}
+	}
+
+	&--laptop {
+		display: none;
+
+		@media screen and ($screen-m <= width) and (width < $screen-l) {
+			display: flex;
+		}
+	}
+
+	&--right-side {
+		display: flex;
+		justify-content: space-between;
+		width: 50%;
+		margin-right: 24px;
+		margin-left: 16px;
+
+		@media screen and (width >= 1120px) {
+			align-self: flex-end;
+			width: unset;
+		}
+	}
+}

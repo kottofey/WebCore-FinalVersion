@@ -1,0 +1,26 @@
+/*Resetting values*/
+html {
+  font-family: "TT Lakes", Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+ul,
+li,
+body,
+p,
+button {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: none;
+  font: inherit;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: inherit;
+}

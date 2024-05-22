@@ -1,0 +1,15 @@
+.page-wrapper {
+  overflow: hidden;
+  max-width: 767px;
+  background-color: $white;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+
+  &--gray-background {
+    background-color: $gray-lighter;
+  }
+}

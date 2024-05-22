@@ -1,10 +1,13 @@
 /* Importing everything here */
-@import "_variables";
+@import "base/reset";
+@import "base/variables";
+@import "base/fonts";
+@import "pages/index";
 @import "init";
-@import "article";
-@import "brands-repair-list";
-@import "lang-switch";
-@import "menu";
-@import "mobile-side";
-@import "slider-menu";
-@import "swiper";
+@import "blocks/article";
+@import "blocks/brands-repair-list";
+@import "blocks/lang-switch";
+@import "blocks/menu";
+@import "blocks/mobile-side";
+@import "blocks/slider-menu";
+@import "blocks/swiper";
