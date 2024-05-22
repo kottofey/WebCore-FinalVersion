@@ -1,3 +1,3 @@
 import './showMoreBtnHandler.js';
 import './swiperInit.js';
-import '../styles/style.scss';
+import '../styles/_style.scss';

@@ -8,6 +8,7 @@
 		@media screen and (width >= 1120px) {
 				height: 92px;
 				border-bottom: none;
+			background-color: $gray-lighter;
 			}
 	}
 
@@ -102,7 +103,7 @@
 
 		&--hide-on-desktop {
 			@media screen and (width >= 1120px) {
-				display: none !important;
+				display: none;
 			}
 		}
 	}
@@ -115,7 +116,7 @@
 		background-color: $white;
 	}
 
-	&--fading:before {
+	&--fading:after {
 		position: absolute;
 		right: 0;
 		width: 24px;
@@ -133,21 +134,19 @@
 		margin-right: auto;
 		margin-left: 16px;
 
-		@media screen and ($screen-m <= width) and (width < $screen-l) {
-			margin-right: auto;
+		@media screen and ($screen-laptop <= width) and (width < $screen-desktop) {
 			margin-left: 24px;
 		}
 
 		@media screen and (width >= 1120px) {
-			margin-right: 595px;
-			margin-left: 24px;
+			display: none;
 		}
 	}
 
 	&--laptop {
 		display: none;
 
-		@media screen and ($screen-m <= width) and (width < $screen-l) {
+		@media screen and ($screen-laptop <= width) and (width < $screen-desktop) {
 			display: flex;
 		}
 	}

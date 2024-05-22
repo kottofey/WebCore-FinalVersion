@@ -1,0 +1,122 @@
+
+.article {
+	margin: 24px auto;
+
+	@media screen and (768px <= width) and (width < 1120px) {
+		position: relative;
+		width: 720px;
+		height: 242px;
+	}
+
+	@media screen and (width >= 1120px) {
+		display: flex;
+	}
+
+	&__content {
+		display: block;
+		overflow: hidden;
+		margin: 0 16px 16px 16px;
+
+		@media screen and (768px <= width) and (width < 1120px) {
+			position: relative;
+			width: 312px;
+			margin: 0;
+		}
+
+		@media screen and (width >= 1120px){
+			max-width: 50%;
+			margin-left: 32px;
+		}
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&--text {
+			overflow: hidden;
+			height: 90px;
+
+			@media screen and (768px <= width) and (width < 1120px) {
+				line-height: 20px;
+				max-width: 312px;
+				height: 160px;
+			}
+
+			@media screen and (width >= 1120px){
+				line-height: 20px;
+				max-width: 490px;
+				height: auto;
+			}
+		}
+
+		//
+		//&--top-content-margin {
+		//	margin-top: 32px;
+		//}
+
+		&--read-next {
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 150%;
+			display: flex;
+			position: relative;
+			margin: 16px 0;
+			padding-left: 20px;
+			letter-spacing: -0.01em;
+			color: $dark;
+
+			@media screen and (768px <= width) and (width < 1120px) {
+				margin: 20px 0 0 0;
+			}
+
+			@media screen and (width >= 1120px) {
+				margin: 20px 0 0 0;
+			}
+
+			&:before {
+				display: block;
+				content: '';
+				position: absolute;
+				width: 5px;
+				height: 5px;
+				top: 4px;
+				left: 10px;
+				transform: rotate(45deg);
+				border-bottom: 1px $green solid;
+				border-right: 1px $green solid;
+			}
+
+			&:after {
+				content: '';
+				position: absolute;
+				display: block;
+				width: 5px;
+				height: 5px;
+				top: 10px;
+				left: 10px;
+				transform: rotate(45deg);
+				border-bottom: 1px $green solid;
+				border-right: 1px $green solid;
+			}
+		}
+	}
+
+	&__image {
+		width: 100%;
+		height: auto;
+		max-height: 100%;
+
+		@media screen and (768px <= width) and (width < 1120px) {
+			position: absolute;
+			top: 0;
+			right: 0;
+			display: block;
+			max-width: 50%;
+		}
+
+		@media screen and (width >= 1120px) {
+			max-width: 50%;
+			height: auto;
+		}
+	}
+}

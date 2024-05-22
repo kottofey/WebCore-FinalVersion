@@ -1,0 +1,36 @@
+.slider-menu {
+  overflow-x: auto;
+  min-height: 42px;
+  padding-bottom: 24px;
+
+  @media screen and (768px <= width) and (width < 1120px) {
+    min-height: 64px;
+    padding-bottom: 0;
+  }
+
+  @media screen and (width >= 1120px) {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 64px;
+    margin: 10px 25px 7px 32px;
+    padding-bottom: 0;
+  }
+
+  &__slider-item {
+    font-weight: 500;
+    min-width: fit-content;
+    height: 40px;
+    margin-left: 16px;
+    padding: 8px 16px;
+    color: $gray;
+
+    @media screen and (width >= 1120px) {
+      margin: 0;
+      padding: 8px 22px;
+    }
+  }
+
+  &__slider-item:last-child {
+    margin-right: 16px;
+  }
+}

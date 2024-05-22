@@ -1,0 +1,133 @@
+.brands-repair-list {
+	position: relative;
+
+	&__card {
+		display: flex;
+		position: relative;
+		flex: 0 0 222px;
+		height: 72px;
+
+		border: 1px $light-gray solid;
+		border-radius: 6px;
+
+		&--lenovo {
+			background: $white url('../imgs/logos/Lenovo.svg') no-repeat 20px center;
+		}
+
+		&--samsung {
+			background: $white url('../imgs/logos/Samsung.svg') no-repeat 20px center;
+		}
+
+		&--apple {
+			background: $white url('../imgs/logos/Apple.svg') no-repeat 20px center;
+		}
+
+		&--viewsonic {
+			background: $white url('../imgs/logos/ViewSonic.svg') no-repeat 20px center;
+		}
+
+		&--bosch {
+			background: $white url('../imgs/logos/Bosch.svg') no-repeat 20px center;
+		}
+
+		&--hp {
+			background: $white url('../imgs/logos/HelpPlease.svg') no-repeat 20px center;
+		}
+
+		&--acer {
+			background: $white url('../imgs/logos/Acer.svg') no-repeat 20px center;
+		}
+
+		&--sony {
+			background: $white url('../imgs/logos/Sony.svg') no-repeat 20px center;
+		}
+
+		&:after {
+			/*circle*/
+			content: '';
+			z-index: 1;
+			width: 39px;
+			height: 39px;
+			border: 1px solid $button-red;
+			border-radius: 50%;
+			margin: auto 0 auto 168px;
+		}
+
+		&:before {
+			/*little arrow in circle*/
+			content: '';
+			position: absolute;
+			width: 10px;
+			height: 10px;
+			border-right: 1px solid $button-red;
+			border-top: 1px solid $button-red;
+			top: 30px;
+			right: 30px;
+			rotate: 45deg;
+		}
+	}
+
+	&__title {
+		margin: 16px auto 40px 32px;
+		text-transform: uppercase;
+	}
+
+	&__more-btn {
+		position: relative;
+		margin-left: 48px;
+		margin-bottom: 16px;
+		background-color: $gray-lighter;
+
+		@media screen and (width <= 767px) {
+			display: none;
+		}
+
+		&:before {
+			content: '';
+			position: absolute;
+			left: -12px;
+			top: 3px;
+			height: 5px;
+			width: 5px;
+			rotate: 45deg;
+			box-shadow: 1px 1px 0 0 $green,
+			3px 3px 0 0 $gray-lighter,
+			4px 4px 0 0 $green;
+		}
+	}
+
+	&__less-btn {
+		margin-top: 8px;
+
+		&:before {
+			top: 13px;
+			rotate: 225deg;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 16px 24px;
+		max-width: 100%;
+		margin-left: 24px;
+		height: 170px;
+		overflow: hidden;
+
+		transition: height ease-in-out 400ms;
+
+		@media screen and (width <= 767px) {
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+			gap: unset;
+
+			max-width: unset;
+			margin-left: 0;
+			height: fit-content;
+		}
+		&--expanded {
+			height: fit-content;
+		}
+	}
+}

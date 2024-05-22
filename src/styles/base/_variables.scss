@@ -1,8 +1,8 @@
 // Breakpoints
-$screen-xs: 0;
-$screen-sm: 320px;
-$screen-m:  768px;
-$screen-l:  1120px;
+$screen-zero: 0;
+$screen-mobile: 320px;
+$screen-laptop:  768px;
+$screen-desktop:  1120px;
 
 // Colours
 $white: #fff;
@@ -13,6 +13,7 @@ $dark: #1b1c21;
 $button-red: #ff3e79;
 
 $gray-lighter: #f8f8f8;
+
 $gray-lighter-transparent: #f8f8f800;
 $light-gray: #eaeaea;
 $gray: #7E7E82;
