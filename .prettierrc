@@ -7,9 +7,10 @@
   "quoteProps": "preserve",
   "arrowParens": "always",
   "bracketSpacing": true,
-  "jsxBracketSameLine": false,
-  "proseWrap": "never",
-  "htmlWhitespaceSensitivity": "strict",
+  "jsxBracketSameLine": true,
+  "proseWrap": "preserve",
+  "htmlWhitespaceSensitivity": "css",
   "endOfLine": "auto",
-  "singleAttributePerLine": false
+  "singleAttributePerLine": false,
+  "printWidth": 160
 }

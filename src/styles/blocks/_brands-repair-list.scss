@@ -90,9 +90,10 @@
 			height: 5px;
 			width: 5px;
 			rotate: 45deg;
-			box-shadow: 1px 1px 0 0 $green,
-			3px 3px 0 0 $gray-lighter,
-			4px 4px 0 0 $green;
+			box-shadow:
+				1px 1px 0 0 $green,
+				3px 3px 0 0 $gray-lighter,
+				4px 4px 0 0 $green;
 		}
 	}
 
@@ -124,9 +125,6 @@
 
 			max-width: unset;
 			margin-left: 0;
-			height: fit-content;
-		}
-		&--expanded {
 			height: fit-content;
 		}
 	}

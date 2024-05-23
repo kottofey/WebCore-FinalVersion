@@ -6,8 +6,9 @@
 	width: 320px;
 	background-color: $white;
 	z-index: 10;
-	box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2),
-	-2px 0 4px 0 rgba(69, 79, 126, 0.02);
+	box-shadow:
+		16px 0 52px 0 rgba(14, 24, 80, 0.2),
+		-2px 0 4px 0 rgba(69, 79, 126, 0.02);
 
 	&--side-margins--20 {
 		padding: 0 20px;
@@ -32,12 +33,11 @@
 		margin: 0 0 12px 14px;
 		padding: 10px;
 
-
 		&--active {
 			margin-left: 10px;
 
 			&:before {
-				content: "";
+				content: '';
 				width: 4px;
 				height: 32px;
 				transform: translateX(-20px);
@@ -51,5 +51,4 @@
 			margin-top: 45px;
 		}
 	}
-
 }

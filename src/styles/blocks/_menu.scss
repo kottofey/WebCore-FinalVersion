@@ -6,10 +6,10 @@
 		background-color: $white;
 
 		@media screen and (width >= 1120px) {
-				height: 92px;
-				border-bottom: none;
+			height: 92px;
+			border-bottom: none;
 			background-color: $gray-lighter;
-			}
+		}
 	}
 
 	&__header-item {
@@ -52,35 +52,34 @@
 				opacity: 0.7;
 				transform: scale(1.1);
 			}
-
 		}
 
 		&--button-call {
-			background-image: url("../imgs/ic/ic_call.svg");
+			background-image: url('../imgs/ic/ic_call.svg');
 		}
 
 		&--button-chat {
-			background-image: url("../imgs/ic/ic_chat.svg");
+			background-image: url('../imgs/ic/ic_chat.svg');
 		}
 
 		&--button-profile {
-			background-image: url("../imgs/ic/ic_profile.svg");
+			background-image: url('../imgs/ic/ic_profile.svg');
 		}
 
 		&--button-repair {
-			background-image: url("../imgs/ic/ic_repair.svg");
+			background-image: url('../imgs/ic/ic_repair.svg');
 		}
 
 		&--button-search {
-			background-image: url("../imgs/ic/ic_search.svg");
+			background-image: url('../imgs/ic/ic_search.svg');
 		}
 
 		&--button-checkstatus {
-			background-image: url("../imgs/ic/ic_checkstatus.svg");
+			background-image: url('../imgs/ic/ic_checkstatus.svg');
 		}
 
 		&--button-burger {
-			background-image: url("../imgs/ic/ic_burger.svg");
+			background-image: url('../imgs/ic/ic_burger.svg');
 		}
 
 		&--no-right-margin {
@@ -107,8 +106,7 @@
 			}
 		}
 	}
-// end of .header-item
-
+	// end of .header-item
 
 	&--active-item {
 		border: 2px $lighter-green solid;
@@ -121,8 +119,12 @@
 		right: 0;
 		width: 24px;
 		height: 40px;
-		content: "";
-		background: linear-gradient(270.00deg, $gray-lighter 16.836%, $gray-lighter-transparent 100%);
+		content: '';
+		background: linear-gradient(
+			270deg,
+			$gray-lighter 16.836%,
+			$gray-lighter-transparent 100%
+		);
 
 		@media screen and (width >= 1120px) {
 			display: none;
@@ -134,7 +136,7 @@
 		margin-right: auto;
 		margin-left: 16px;
 
-		@media screen and ($screen-laptop <= width) and (width < $screen-desktop) {
+		@media screen and ($screen-laptop <= width) {
 			margin-left: 24px;
 		}
 
@@ -146,8 +148,12 @@
 	&--laptop {
 		display: none;
 
-		@media screen and ($screen-laptop <= width) and (width < $screen-desktop) {
+		@media screen and ($screen-laptop <= width) {
 			display: flex;
+		}
+
+		@media screen and ($screen-desktop <= width) {
+			display: none;
 		}
 	}
 

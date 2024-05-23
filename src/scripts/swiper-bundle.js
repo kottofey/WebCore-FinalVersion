@@ -346,7 +346,7 @@ var Swiper = (function () {
   function showWarning(text) {
     try {
       console.warn(text);
-      return;
+
     } catch (err) {
       // err
     }
