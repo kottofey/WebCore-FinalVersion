@@ -1,21 +1,21 @@
-const moreBtn = document.querySelector('.brands-repair-list__more-btn');
+const showMoreBtn = document.querySelector('.brands-repair-list__more-btn');
 const list = document.querySelector('.brands-repair-list__wrapper');
 
-const createMoreBtnHandler = function (button) {
+const createMoreBtnHandler = function (button, content) {
 	button.addEventListener('click', function () {
-		let isExpanded = moreBtn.classList.contains('brands-repair-list__less-btn');
+		let isExpanded = button.classList.contains('brands-repair-list__less-btn');
 
-		list.style.height = `${list.scrollHeight}px`;
-		moreBtn.textContent = 'Свернуть';
-		moreBtn.classList.toggle('brands-repair-list__less-btn');
+		content.style.height = `${content.scrollHeight}px`;
+		button.textContent = 'Свернуть';
+		button.classList.toggle('brands-repair-list__less-btn');
 
 		if (isExpanded) {
-			list.style.height = '170px';
-			moreBtn.textContent = 'Показать все';
+			content.style.height = '170px';
+			button.textContent = 'Показать все';
 		}
 	});
 };
 
 if (window.innerWidth >= 768) {
-	createMoreBtnHandler(moreBtn);
+	createMoreBtnHandler(showMoreBtn, list);
 }

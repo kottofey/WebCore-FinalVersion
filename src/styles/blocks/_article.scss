@@ -115,7 +115,8 @@
 		max-height: 100%;
 		object-fit: cover;
 
-		@media screen and (768px <= width) {
+		@media screen and (width >= $screen-laptop) {
+			border-radius: 6px;
 		}
 
 		@media screen and (width >= 1120px) {

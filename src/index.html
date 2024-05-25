@@ -9,7 +9,7 @@
 
 	<body>
 		<div class="page-wrapper">
-			<header class="header">
+			<header class="header main--desktop-fix">
 				<div class="desktop-wrapper">
 					<nav class="menu menu--header-menu">
 						<ul class="menu--left-side menu__header-item--hide-on-desktop">
@@ -72,7 +72,7 @@
 				</ul>
 			</header>
 
-			<main class="main">
+			<main class="main main--desktop-fix">
 				<article class="article">
 					<div class="article__content">
 						<p class="article__content--text">
@@ -97,63 +97,6 @@
 					<img alt="логотип" class="article__image" src="./imgs/Picture.png" />
 				</article>
 
-				<!-- mobile menu -->
-				<div class="mobile-side">
-					<ul class="menu mobile-side--width--320 mobile-side--side-margins--20">
-						<li class="menu__header-item">
-							<button class="menu__header-item--button menu__header-item--button-burger"></button>
-						</li>
-						<li class="menu__header-item">
-							<a href="#">
-								<img alt="Логотип ЦПС" src="./imgs/header-logo.svg" />
-							</a>
-						</li>
-						<li class="menu__header-item menu__header-item--push-right">
-							<button class="menu__header-item--button menu__header-item--button-search"></button>
-						</li>
-					</ul>
-
-					<a class="mobile-side__menu-item mobile-side__menu-item--active" href="#">Ремонт техники</a>
-					<a class="mobile-side__menu-item" href="#">Услуги и сервисы</a>
-					<a class="mobile-side__menu-item" href="#">Корпоративным клиентам</a>
-					<a class="mobile-side__menu-item" href="#">Продавцам техники</a>
-					<a class="mobile-side__menu-item" href="#">Партнерам</a>
-					<a class="mobile-side__menu-item" href="#">Производителям</a>
-					<a class="mobile-side__menu-item" href="#">Наши сервисные центры</a>
-					<a class="mobile-side__menu-item" href="#">Контакты</a>
-
-					<ul class="menu mobile-side--side-margins--20 menu__header-item--push-down">
-						<li class="menu__header-item">
-							<button class="menu__header-item--button menu__header-item--button-call"></button>
-						</li>
-						<li class="menu__header-item">
-							<button class="menu__header-item--button menu__header-item--button-chat"></button>
-						</li>
-						<li class="menu__header-item">
-							<button class="menu__header-item--button menu__header-item--button-profile"></button>
-						</li>
-					</ul>
-
-					<a class="mobile-side--side-margins--20 mobile-side--bottom-margin-15" href="mailto:mail@cps.com">mail@cps.com</a>
-					<a class="mobile-side--tel mobile-side--side-margins--20 mobile-side--bottom-margin-15" href="tel:+78008908900">8 800 890 89 00</a>
-
-					<form action="#" class="lang-switch mobile-side--side-margins--20 mobile-side--bottom-margin-15">
-						<label>
-							<input checked class="lang-switch__item" id="lang-ru" name="lang" type="radio" />
-							<span class="lang-switch__label--text">RU</span>
-						</label>
-						<label>
-							<input class="lang-switch__item" id="lang-en" name="lang" type="radio" />
-							<span class="lang-switch__label--text">EN</span>
-						</label>
-						<label class="lang-switch__label">
-							<input class="lang-switch__item" id="lang-cn" name="lang" type="radio" />
-							<span class="lang-switch__label--text">CN</span>
-						</label>
-					</form>
-				</div>
-				<!-- end of mobile menu -->
-
 				<!--	Repair brands	-->
 				<div class="brands-repair-list">
 					<p class="brands-repair-list__title">Ремонт техники различных брендов</p>
@@ -175,7 +118,84 @@
 					<button class="brands-repair-list__more-btn" type="button">Показать все</button>
 				</div>
 				<!--	End of Repair brands	-->
+<!--	Repair Devices -->
+				<div class="brands-repair-list">
+					<p class="brands-repair-list__title">Ремонт различных видов техники</p>
+
+					<div class="brands-repair-list__wrapper">
+						<button class="brands-repair-list__card brands-repair-list__card--device" type="button">Ремонт ноутбуков</button>
+						<button class="brands-repair-list__card brands-repair-list__card--device" type="button">Ремонт планшетов</button>
+						<button class="brands-repair-list__card brands-repair-list__card--device" type="button">Ремонт ПК</button>
+						<button class="brands-repair-list__card brands-repair-list__card--device" type="button">Ремонт мониторов</button>
+					</div>
+
+					<div class="swiper-wrapper__fade"></div>
+					<div class="swiper-pagination" hidden></div>
+					<button class="brands-repair-list__more-btn" type="button">Показать все</button>
+				</div>
+<!--	End of Repair Devices-->
+
 			</main>
+
+
+			<!-- modal menu -->
+				<div class="modal-menu modal-menu--closed modal-menu--width-handling">
+					<ul class="menu modal-menu--side-margins--20 ">
+						<li class="menu__header-item">
+							<button class="menu__header-item--button menu__header-item--button-burger"></button>
+						</li>
+						<li class="menu__header-item">
+							<a href="#">
+								<img alt="Логотип ЦПС" src="./imgs/header-logo.svg" />
+							</a>
+						</li>
+						<li class="menu__header-item menu__header-item--push-right">
+							<button class="menu__header-item--button menu__header-item--button-search"></button>
+						</li>
+					</ul>
+					<a class="modal-menu__menu-item modal-menu__menu-item--active" href="#">Ремонт техники</a>
+					<a class="modal-menu__menu-item" href="#">Услуги и сервисы</a>
+					<a class="modal-menu__menu-item" href="#">Корпоративным клиентам</a>
+					<a class="modal-menu__menu-item" href="#">Продавцам техники</a>
+					<a class="modal-menu__menu-item" href="#">Партнерам</a>
+					<a class="modal-menu__menu-item" href="#">Производителям</a>
+					<a class="modal-menu__menu-item" href="#">Наши сервисные центры</a>
+					<a class="modal-menu__menu-item" href="#">Контакты</a>
+
+					<ul class="menu modal-menu--side-margins--20 menu__header-item--push-down">
+						<li class="menu__header-item">
+							<button class="menu__header-item--button menu__header-item--button-call"></button>
+						</li>
+						<li class="menu__header-item">
+							<button class="menu__header-item--button menu__header-item--button-chat"></button>
+						</li>
+						<li class="menu__header-item">
+							<button class="menu__header-item--button menu__header-item--button-profile"></button>
+						</li>
+					</ul>
+
+					<a class="modal-menu--side-margins--20 modal-menu--bottom-margin-15" href="mailto:mail@cps.com">mail@cps.com</a>
+					<a class="modal-menu--tel modal-menu--side-margins--20 modal-menu--bottom-margin-15" href="tel:+78008908900">8 800 890 89 00</a>
+
+					<form action="#" class="lang-switch modal-menu--side-margins--20 modal-menu--bottom-margin-15">
+						<label>
+							<input checked class="lang-switch__item" id="lang-ru" name="lang" type="radio" />
+							<span class="lang-switch__label--text">RU</span>
+						</label>
+						<label>
+							<input class="lang-switch__item" id="lang-en" name="lang" type="radio" />
+							<span class="lang-switch__label--text">EN</span>
+						</label>
+						<label class="lang-switch__label">
+							<input class="lang-switch__item" id="lang-cn" name="lang" type="radio" />
+							<span class="lang-switch__label--text">CN</span>
+						</label>
+					</form>
+			</div>
+			<div class="modal-blur modal-blur--off"></div>
+			<!-- end of mobile menu -->
+
 		</div>
+		<!--	End of page wrapper-->
 	</body>
 </html>

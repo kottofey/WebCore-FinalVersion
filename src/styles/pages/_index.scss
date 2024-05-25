@@ -1,5 +1,5 @@
 .page-wrapper {
-	overflow: hidden;
+	//overflow: hidden;
 	max-width: 767px;
 	background-color: $gray-lighter;
 	position: relative;
@@ -52,5 +52,29 @@
 				margin-right: 30px;
 			}
 		}
+	}
+}
+
+.main {
+	position: relative;
+
+	@media screen and (width >= $screen-desktop) {
+		&--desktop-fix {
+			margin-left: 320px;
+		}
+	}
+}
+
+.modal-blur {
+	width: 100vw;
+	height: 100vh;
+	background-color: $dark;
+	opacity: 90%;
+	position: fixed;
+	top: 0;
+	z-index: 5;
+
+	&--off {
+		display: none;
 	}
 }

@@ -11,35 +11,40 @@
 		border-radius: 6px;
 
 		&--lenovo {
-			background: $white url('../imgs/logos/Lenovo.svg') no-repeat 20px center;
+			@include brand-card('../imgs/logos/Lenovo.svg');
 		}
 
 		&--samsung {
-			background: $white url('../imgs/logos/Samsung.svg') no-repeat 20px center;
+			@include brand-card('../imgs/logos/Samsung.svg');
 		}
 
 		&--apple {
-			background: $white url('../imgs/logos/Apple.svg') no-repeat 20px center;
+			@include brand-card('../imgs/logos/Apple.svg');
 		}
 
 		&--viewsonic {
-			background: $white url('../imgs/logos/ViewSonic.svg') no-repeat 20px center;
+			@include brand-card('../imgs/logos/ViewSonic.svg');
 		}
 
 		&--bosch {
-			background: $white url('../imgs/logos/Bosch.svg') no-repeat 20px center;
+			@include brand-card('../imgs/logos/Bosch.svg');
 		}
 
 		&--hp {
-			background: $white url('../imgs/logos/HelpPlease.svg') no-repeat 20px center;
+			@include brand-card('../imgs/logos/HelpPlease.svg');
 		}
 
 		&--acer {
-			background: $white url('../imgs/logos/Acer.svg') no-repeat 20px center;
+			@include brand-card('../imgs/logos/Acer.svg');
 		}
 
 		&--sony {
-			background: $white url('../imgs/logos/Sony.svg') no-repeat 20px center;
+			@include brand-card('../imgs/logos/Sony.svg');
+		}
+
+		&--device {
+			height: 160px;
+			width: 240px;
 		}
 
 		&:after {

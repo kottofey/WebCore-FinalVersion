@@ -1,4 +1,5 @@
-import './showMoreBtnHandler.js';
+import './showMoreBtnHandler';
 import './readMoreBtnHandler';
-import './swiperInit.js';
+import './swiperInit';
+import './modalHandlers';
 import '../styles/_style.scss';

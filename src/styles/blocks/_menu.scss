@@ -80,6 +80,14 @@
 
 		&--button-burger {
 			background-image: url('../imgs/ic/ic_burger.svg');
+
+			&--close {
+				background-image: url('../imgs/ic/ic_close.svg');
+			}
+
+			@media screen and (width >= $screen-desktop) {
+				display: none;
+			}
 		}
 
 		&--no-right-margin {

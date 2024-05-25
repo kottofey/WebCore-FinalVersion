@@ -1,0 +1,4 @@
+@mixin brand-card($brand-url) {
+	background: $white url($brand-url) no-repeat 20px center;
+
+}
