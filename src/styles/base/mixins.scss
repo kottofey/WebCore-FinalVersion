@@ -1,4 +1,51 @@
 @mixin brand-card($brand-url) {
 	background: $white url($brand-url) no-repeat 20px center;
+	height: 72px;
+	flex: 0 0 222px;
+	@include arrowIcon();
+	@include circleIcon();
 
+	// positioning circle icon in ::after
+	&:after {
+		top: 50%;
+		transform: translateY(-50%);
+		left: 168px;
+	}
+
+	// positioning arrow icon in ::before
+		&:before {
+			top: 30px;
+			right: 30px;
+		}
+}
+
+
+
+@mixin circleIcon() {
+	&:after {
+		/*circle*/
+		content: '';
+		position: absolute;
+		z-index: 1;
+		width: 39px;
+		height: 39px;
+		border: 1px solid $button-red;
+		border-radius: 50%;
+		// margin: auto 0 auto 168px;
+	}
+}
+
+@mixin arrowIcon() {
+	&:before {
+		/*little arrow in circle*/
+		content: '';
+		position: absolute;
+		width: 10px;
+		height: 10px;
+		border-right: 1px solid $button-red;
+		border-top: 1px solid $button-red;
+		rotate: 45deg;
+		// top: 30px;
+		// right: 30px;
+	}
 }

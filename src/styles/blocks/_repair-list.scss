@@ -1,11 +1,9 @@
-.brands-repair-list {
+.repair-list {
 	position: relative;
 
 	&__card {
 		display: flex;
 		position: relative;
-		flex: 0 0 222px;
-		height: 72px;
 
 		border: 1px $light-gray solid;
 		border-radius: 6px;
@@ -44,31 +42,24 @@
 
 		&--device {
 			height: 160px;
-			width: 240px;
-		}
+			//flex-base 190+ paddings 16+16 + border 1+1 = 224px
+			flex: 0 0 190px;
+			background-color: $white;
+			padding: 16px;
+			@include arrowIcon();
+			@include circleIcon();
 
-		&:after {
-			/*circle*/
-			content: '';
-			z-index: 1;
-			width: 39px;
-			height: 39px;
-			border: 1px solid $button-red;
-			border-radius: 50%;
-			margin: auto 0 auto 168px;
-		}
+			// positioning circle icon in ::after
+			&:after {
+				right: 16px;
+				bottom: 16px;
+			}
 
-		&:before {
-			/*little arrow in circle*/
-			content: '';
-			position: absolute;
-			width: 10px;
-			height: 10px;
-			border-right: 1px solid $button-red;
-			border-top: 1px solid $button-red;
-			top: 30px;
-			right: 30px;
-			rotate: 45deg;
+			// positioning arrow icon in ::before
+			&:before {
+				bottom: 30px;
+				right: 33px;
+			}
 		}
 	}
 

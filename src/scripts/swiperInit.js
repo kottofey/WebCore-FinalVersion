@@ -1,29 +1,49 @@
+// html swiper init:
+// swiper global wrapper must have class '.repair-list'
+// swiper wrapper must have class '.repair-list__wrapper'
+// swiper card must have class '.repair-list__card'
+
 import Swiper from 'swiper';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-if (window.innerWidth <= 767) {
-	let wrapper = document.querySelector('.brands-repair-list__wrapper');
-	wrapper.classList.add('swiper-wrapper');
-	wrapper.classList.remove('brands-repair-list__wrapper');
+// Initialize swipers only for screens below 768px wide
+if (window.innerWidth < 768) {
+	let swipers = document.querySelectorAll('.repair-list');
+	let wrappers = document.querySelectorAll('.repair-list__wrapper');
+	let swiperPaginations = document.querySelectorAll('.swiper-pagination');
 
-	document.querySelector('.swiper-pagination').hidden = false;
+	wrappers.forEach((wrapper) => {
+		wrapper.classList.add('swiper-wrapper');
+		wrapper.classList.remove('repair-list__wrapper');
+	});
 
-	const swiper = new Swiper('.brands-repair-list', {
-		modules: [Pagination],
-		direction: 'horizontal',
-		slidesOffsetBefore: 16,
-		slidesOffsetAfter: 16,
-		slideClass: 'brands-repair-list__card',
-		pagination: {
-			el: '.swiper-pagination',
-		},
-		spaceBetween: 16,
+	swiperPaginations.forEach((pag) => {
+		pag.hidden = false;
+	});
 
-		// this calculates the distance a slide should move
-		// depending on screen width on document load
-		// slidesPerView = (screen width + spaceBetween) / scroll distance
-		slidesPerView: (window.innerWidth + 16) / (224 + 16),
+	// init each found wrapper separately for calculating card width
+	// and proper scroll distance calculation
+	swipers.forEach((swiper) => {
+		let cardWidth = swiper.querySelector('.repair-list__card').scrollWidth;
+
+		new Swiper(swiper, {
+			modules: [Pagination],
+			direction: 'horizontal',
+			slidesOffsetBefore: 16,
+			slidesOffsetAfter: 16,
+			slideClass: 'repair-list__card',
+			pagination: {
+				el: '.swiper-pagination',
+			},
+			spaceBetween: 16,
+
+			// this calculates the distance a slide should move
+			// depending on screen width on document load
+			// slidesPerView = (screen width + spaceBetween) / scroll distance
+			// 2 in the end is width of left-right borders of 1px each
+			slidesPerView: (window.innerWidth + 16) / (cardWidth + 16 + 2),
+		});
 	});
 }
