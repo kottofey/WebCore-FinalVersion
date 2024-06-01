@@ -1,0 +1,58 @@
+.prices {
+	position: relative;
+
+	&__card {
+		padding: 16px;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		flex: 0 0 260px;
+		height: 200px;
+		background-color: $white;
+		border-radius: 6px;
+
+		&--service {
+			margin-bottom: 15px;
+
+			&:before {
+				content: 'Ремонтные услуги';
+				color: $gray;
+				display: flex;
+				flex-direction: column;
+			}
+		}
+
+		&--price {
+			margin-bottom: 15px;
+
+			&:before {
+				content: 'Цена';
+				color: $gray;
+				display: flex;
+				flex-direction: column;
+			}
+		}
+
+		&--duration {
+
+			&:before {
+				content: 'Срок';
+				color: $gray;
+				display: flex;
+				flex-direction: column;
+			}
+		}
+
+	}
+
+	&__btn-order {
+		width: 120px;
+		height: 30px;
+		border-radius: 16px;
+		color: $white;
+		background-color: $button-red;
+		position: absolute;
+		bottom: 16px;
+		right: 16px;
+	}
+}

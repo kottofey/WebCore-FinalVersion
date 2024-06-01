@@ -4,13 +4,13 @@
 	background-color: $gray-lighter;
 	position: relative;
 
-	@media screen and (width >= 1120px) {
-		max-width: 1121px;
+	@media screen and (768px <= width) {
+		max-width: 1119px;
 		margin: 0 auto;
 	}
 
-	@media screen and (768px <= width) {
-		max-width: 1119px;
+	@media screen and (width >= 1120px) {
+		max-width: 1440px;
 		margin: 0 auto;
 	}
 }
@@ -63,6 +63,15 @@
 			margin-left: 320px;
 		}
 	}
+
+	&__text {
+		padding: 16px;
+
+		&--disclaimer {
+			max-width: 440px;
+			font-size: 14px;
+		}
+	}
 }
 
 .modal-blur {
@@ -76,5 +85,77 @@
 
 	&--off {
 		display: none;
+	}
+}
+
+.kp-btn {
+	font-weight: bold;
+	background-color: $gray-lighter;
+	text-align: left;
+	margin: 16px;
+
+	display: flex;
+	flex-direction: row;
+	column-gap: 8px;
+
+	@include arrowIcon();
+
+	@media screen and (width <= 350px) {
+		max-width: 200px;
+	}
+
+	&:after {
+		position: static;
+		align-self: center;
+
+		scale: 0.85;
+		border-top: 3px solid $button-red;
+		border-right: 3px solid $button-red;
+
+		@media screen and (width <= 350px) {
+			position: absolute;
+			bottom: 5px;
+			left: 127px;
+		}
+	}
+}
+
+.footer {
+	color: $gray;
+	font-size: 14px;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	padding: 30px 24px 24px 24px;
+	margin-top: 50px;
+	border-top: 1px solid $green-lighter;
+
+	column-gap: 8px;
+
+	@media screen and (width < $screen-laptop) {
+		flex-direction: column;
+		align-items: center;
+		row-gap: 16px;
+	}
+
+	&__item {
+
+		&--copy {
+			@media screen and (width >= $screen-laptop) {
+				text-align: left;
+			}
+		}
+
+		&--disclaimer {
+			text-align: right;
+
+			@media screen and (width >= $screen-laptop) {
+				max-width: 220px;
+			}
+		}
+
+		&--privacy {
+			text-align: center;
+		}
 	}
 }

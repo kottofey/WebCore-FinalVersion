@@ -1,17 +1,39 @@
-.swiper-wrapper {
+.swiper {
+
+	&-wrapper {
+		// no BEM-style due to swiper specification
+			margin-top: 16px;
+		}
+
+	&__wrapper {
+		// here doubling styles for BEM-style due to swiper specification
+		margin-top: 16px;
+	}
+
 	&__fade {
 		@media screen and (width <= 767px) {
 			position: absolute;
-			height: 74px;
 			width: 34px;
-			bottom: 32px;
+			bottom: 42px;
 			right: 0;
 			z-index: 1;
 			background: linear-gradient(
-				270deg,
-				$gray-lighter 16.836%,
-				$gray-lighter-transparent 100%
+					270deg,
+					$gray-lighter 16.836%,
+					$gray-lighter-transparent 100%
 			);
+
+			&--brands {
+				height: 74px;
+			}
+
+			&--devices {
+				height: 194px;
+			}
+
+			&--prices {
+				height: 232px;
+			}
 		}
 	}
 }

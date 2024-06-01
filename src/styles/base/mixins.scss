@@ -5,15 +5,15 @@
 	@include arrowIcon();
 	@include circleIcon();
 
-	// positioning circle icon in ::after
-	&:after {
+	// positioning circle icon in ::before
+	&:before {
 		top: 50%;
 		transform: translateY(-50%);
 		left: 168px;
 	}
 
-	// positioning arrow icon in ::before
-		&:before {
+	// positioning arrow icon in ::after
+		&:after {
 			top: 30px;
 			right: 30px;
 		}
@@ -22,7 +22,7 @@
 
 
 @mixin circleIcon() {
-	&:after {
+	&:before {
 		/*circle*/
 		content: '';
 		position: absolute;
@@ -36,7 +36,7 @@
 }
 
 @mixin arrowIcon() {
-	&:before {
+	&:after {
 		/*little arrow in circle*/
 		content: '';
 		position: absolute;
@@ -45,7 +45,5 @@
 		border-right: 1px solid $button-red;
 		border-top: 1px solid $button-red;
 		rotate: 45deg;
-		// top: 30px;
-		// right: 30px;
 	}
 }

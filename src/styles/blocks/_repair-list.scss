@@ -5,7 +5,7 @@
 		display: flex;
 		position: relative;
 
-		border: 1px $light-gray solid;
+		border: 1px $gray-light solid;
 		border-radius: 6px;
 
 		&--lenovo {
@@ -50,13 +50,13 @@
 			@include circleIcon();
 
 			// positioning circle icon in ::after
-			&:after {
+			&:before {
 				right: 16px;
 				bottom: 16px;
 			}
 
 			// positioning arrow icon in ::before
-			&:before {
+			&:after {
 				bottom: 30px;
 				right: 33px;
 			}
@@ -64,8 +64,12 @@
 	}
 
 	&__title {
-		margin: 16px auto 40px 32px;
+		// padding: 16px 0 40px 32px;
+		padding: 16px;
 		text-transform: uppercase;
+
+		background: linear-gradient(to right, $gray-lighter 0%, $white 75%);
+		border-top: 1px solid $green-lighter;
 	}
 
 	&__more-btn {
@@ -86,10 +90,9 @@
 			height: 5px;
 			width: 5px;
 			rotate: 45deg;
-			box-shadow:
-				1px 1px 0 0 $green,
-				3px 3px 0 0 $gray-lighter,
-				4px 4px 0 0 $green;
+			box-shadow: 1px 1px 0 0 $green,
+			3px 3px 0 0 $gray-lighter,
+			4px 4px 0 0 $green;
 		}
 	}
 
