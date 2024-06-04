@@ -130,6 +130,13 @@
 		right: 16px;
 
 		grid-area: order;
+		@media screen and (width >= $screen-laptop) {
+			position: static;
+			&:after {
+				top: 25px;
+			}
+		}
+
 		@include arrowIcon();
 		&:after {
 			border-top: $white 3px solid;
@@ -137,12 +144,6 @@
 
 			scale: 0.5;
 			top: 10px;
-		}
-		@media screen and (width >= $screen-laptop) {
-			position: static;
-			&:after {
-				top: 25px;
-			}
 		}
 	}
 }

@@ -1,14 +1,14 @@
 /* Importing everything here */
-@import "base/reset";
-@import "base/variables";
-@import "base/fonts";
+@import 'base/reset';
+@import 'base/variables';
+@import 'base/fonts';
 @import 'base/mixins';
-@import "pages/index";
-@import "blocks/article";
-@import "blocks/repair-list";
-@import "blocks/lang-switch";
-@import "blocks/menu";
-@import "blocks/mobile-side";
-@import "blocks/slider-menu";
+@import 'pages/index';
+@import 'blocks/article';
+@import 'blocks/repair-list';
+@import 'blocks/lang-switch';
+@import 'blocks/menu';
+@import 'blocks/modal-menu';
+@import 'blocks/slider-menu';
 @import 'blocks/prices';
-@import "blocks/swiper";
+@import 'blocks/swiper';

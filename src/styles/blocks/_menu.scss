@@ -19,6 +19,10 @@
 		height: 88px;
 		margin-right: 16px;
 
+		&:last-child {
+			margin-right: 0;
+		}
+
 		&--title {
 			display: none;
 
@@ -38,10 +42,6 @@
 			@media screen and (width >= $screen-desktop) {
 				margin-top: 240px;
 			}
-		}
-
-		&:last-child {
-			margin-right: 0;
 		}
 
 		&--button {
@@ -85,12 +85,12 @@
 		&--button-burger {
 			background-image: url('../imgs/ic/ic_burger.svg');
 
-			&--close {
-				background-image: url('../imgs/ic/ic_close.svg');
-			}
-
 			@media screen and (width >= $screen-desktop) {
 				display: none;
+			}
+
+			&--close {
+				background-image: url('../imgs/ic/ic_close.svg');
 			}
 		}
 
@@ -126,20 +126,16 @@
 		background-color: $white;
 	}
 
-	&--fading:after {
-		position: absolute;
-		right: 0;
-		width: 24px;
-		height: 40px;
-		content: '';
-		background: linear-gradient(
-			270deg,
-			$gray-lighter 16.836%,
-			$gray-lighter-transparent 100%
-		);
-
-		@media screen and (width >= 1120px) {
-			display: none;
+	&--fading {
+		@media screen and (width < 1120px) {
+			&:after {
+				content: '';
+				position: absolute;
+				right: 0;
+				width: 24px;
+				height: 40px;
+				background: linear-gradient(270deg, $gray-lighter 16.836%, $gray-lighter-transparent 100%);
+			}
 		}
 	}
 
