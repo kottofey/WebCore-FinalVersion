@@ -1,0 +1,69 @@
+.modal-feedback {
+	z-index: 20;
+
+	@media screen and (width >= $screen-laptop) {
+		right: 0;
+	}
+
+	&__form {
+		padding: 16px;
+	}
+
+	&__label {
+		display: block;
+	}
+
+	&__message {
+		width: 288px;
+		height: 120px;
+	}
+
+	&__text {
+		font-size: 14px;
+		padding: 16px;
+	}
+
+	&__link {
+		color: $button-red;
+	}
+
+	&__btn-send {
+		width: 100px;
+		height: 30px;
+		padding-right: 10px;
+		margin-left: auto;
+		margin-right: 16px;
+
+		border-radius: 16px;
+		color: $white;
+		background-color: $button-red;
+		position: relative;
+
+		@include arrowIcon();
+		@media screen and (width >= $screen-laptop) {
+			//position: static;
+		}
+
+		&:after {
+			border-top: $white 3px solid;
+			border-right: $white 3px solid;
+
+			scale: 0.8;
+			top: 10px;
+		}
+	}
+
+	&--closed {
+		display: none;
+	}
+
+	&__btn {
+		margin-top: 24px;
+		margin-left: 16px;
+
+		@media screen and (width >= $screen-laptop) {
+			position: absolute;
+			margin-left: -72px;
+		}
+	}
+}

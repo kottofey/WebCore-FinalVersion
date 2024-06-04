@@ -191,6 +191,7 @@
 					<div class="swiper-pagination" hidden></div>
 				</div>
 				<!--	End of Prices -->
+
 				<p class="main__text main__text--disclaimer">
 					Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание,
 					оставьте заявку.
@@ -263,9 +264,64 @@
 					</label>
 				</form>
 			</aside>
-			<div class="modal-blur modal-blur--off"></div>
-			<!-- end of mobile menu -->
+			<!-- end of modal menu -->
+
+			<!--	modal feedback-->
+			<div class="modal-menu modal-feedback modal-feedback--closed modal-menu--width-handling">
+				<button class="modal-feedback__btn menu__header-item--button menu__header-item--button-burger--close"></button>
+
+				<h1 class="title title--top">Обратная связь</h1>
+
+				<form class="modal-feedback__form" action="#">
+					<label class="modal-feedback__label" for="modal-name">
+						<input type="text" name="modal-name" id="modal-name" placeholder="Имя" />
+					</label>
+					<label class="modal-feedback__label" for="modal-phone">
+						<input type="text" name="modal-phone" id="modal-phone" placeholder="Телефон" />
+					</label>
+					<label class="modal-feedback__label" for="modal-email">
+						<input type="text" name="modal-email" id="modal-email" placeholder="Электронная почта" />
+					</label>
+
+					<label for="modal-message" class="modal-feedback__label">
+						<textarea class="modal-feedback__message" name="modal-message" id="modal-message" cols="30" rows="10" placeholder="Сообщение"></textarea>
+					</label>
+				</form>
+
+				<p class="modal-feedback__text">
+					Нажимая “отправить”, вы даете согласие на
+					<a href="#" class="modal-feedback__link">обработку персональных данных</a> и соглашаетесь с нашей
+					<a href="#" class="modal-feedback__link">политикой конфиденциальности</a>
+				</p>
+
+				<button class="modal-feedback__btn-send" type="submit">Отправить</button>
+			</div>
+			<!--	end of modal feedback-->
+
+			<!--	modal call-->
+			<div class="modal-menu modal-feedback modal-menu--width-handling">
+				<button class="modal-feedback__btn menu__header-item--button menu__header-item--button-burger--close"></button>
+
+				<h1 class="title title--top">Заказать звонок</h1>
+
+				<form class="modal-feedback__form" action="#">
+					<label class="modal-feedback__label" for="modal-name">
+						<input type="text" name="modal-call" id="modal-call" placeholder="Телефон" />
+					</label>
+				</form>
+
+				<p class="modal-feedback__text">
+					Нажимая “отправить”, вы даете согласие на
+					<a href="#" class="modal-feedback__link">обработку персональных данных</a> и соглашаетесь с нашей
+					<a href="#" class="modal-feedback__link">политикой конфиденциальности</a>
+				</p>
+
+				<button class="modal-feedback__btn-send" type="submit">Отправить</button>
+			</div>
+			<!--	end of modal call-->
 		</div>
+		<div class="modal-blur modal-blur--off"></div>
+
 		<!--	End of page wrapper-->
 	</body>
 </html>

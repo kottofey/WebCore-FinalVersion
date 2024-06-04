@@ -85,7 +85,7 @@
 	opacity: 90%;
 	position: fixed;
 	top: 0;
-	z-index: 5;
+	z-index: 15;
 
 	&--off {
 		display: none;
@@ -99,6 +99,7 @@
 	margin-top: 16px;
 	padding: 0 0 0 16px;
 
+	position: relative;
 	display: flex;
 	flex-direction: row;
 	column-gap: 8px;
@@ -154,10 +155,11 @@
 		}
 
 		&--disclaimer {
-			text-align: right;
+			text-align: center;
 
 			@media screen and (width >= $screen-laptop) {
 				max-width: 220px;
+				text-align: right;
 			}
 		}
 
