@@ -66,8 +66,10 @@
 	&__title {
 		// padding: 16px 0 40px 32px;
 		padding: 16px;
+		margin: 16px 0 16px 16px;
 		text-transform: uppercase;
 
+		color: $gray;
 		background: linear-gradient(to right, $gray-lighter 0%, $white 75%);
 		border-top: 1px solid $green-lighter;
 	}
@@ -90,9 +92,10 @@
 			height: 5px;
 			width: 5px;
 			rotate: 45deg;
-			box-shadow: 1px 1px 0 0 $green,
-			3px 3px 0 0 $gray-lighter,
-			4px 4px 0 0 $green;
+			box-shadow:
+				1px 1px 0 0 $green,
+				3px 3px 0 0 $gray-lighter,
+				4px 4px 0 0 $green;
 		}
 	}
 
