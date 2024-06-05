@@ -1,0 +1,36 @@
+.kp-btn {
+	font-weight: bold;
+	background-color: $gray-lighter;
+	text-align: left;
+	margin-top: 16px;
+	padding: 0 0 0 16px;
+
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	column-gap: 8px;
+
+	@media screen and (width >=$screen-laptop) {
+		padding: 0 0 0 32px;
+	}
+
+	@media screen and (width <= 350px) {
+		max-width: 200px;
+	}
+
+	@include arrowIcon();
+	&:after {
+		position: static;
+		align-self: center;
+
+		scale: 0.85;
+		border-top: 3px solid $button-red;
+		border-right: 3px solid $button-red;
+
+		@media screen and (width <= 350px) {
+			position: absolute;
+			bottom: 5px;
+			left: 127px;
+		}
+	}
+}

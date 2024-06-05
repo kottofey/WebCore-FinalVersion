@@ -18,7 +18,7 @@
 							</li>
 							<li class="menu__header-item menu__header-item--divider menu--laptop"></li>
 							<li class="menu__header-item">
-								<a href="#">
+								<a class="link" href="#">
 									<img alt="Логотип ЦПС" src="./imgs/header-logo.svg" />
 								</a>
 							</li>
@@ -52,22 +52,22 @@
 
 				<ul class="menu slider-menu menu--fading">
 					<li class="slider-menu__slider-item menu--active-item">
-						<a href="#">Ремонтируемые бренды</a>
+						<a class="link" href="#">Ремонтируемые бренды</a>
 					</li>
 					<li class="slider-menu__slider-item">
-						<a href="#">Доп. услуги</a>
+						<a class="link" href="#">Доп. услуги</a>
 					</li>
 					<li class="slider-menu__slider-item">
-						<a href="#">Ремонтируемые устройства</a>
+						<a class="link" href="#">Ремонтируемые устройства</a>
 					</li>
 					<li class="slider-menu__slider-item">
-						<a href="#">Цены</a>
+						<a class="link" href="#">Цены</a>
 					</li>
 					<li class="slider-menu__slider-item">
-						<a href="#">Адреса сервисных центров</a>
+						<a class="link" href="#">Адреса сервисных центров</a>
 					</li>
 					<li class="slider-menu__slider-item">
-						<a href="#">Отзывы</a>
+						<a class="link" href="#">Отзывы</a>
 					</li>
 				</ul>
 			</header>
@@ -203,21 +203,21 @@
 				<footer class="footer">
 					<div class="footer__item footer__item--copy">
 						<p>&copy 2024 CPS</p>
-						<a href="#">Разработано командой Apesong </a>
+						<a class="link" href="#">Разработано командой Apesong </a>
 					</div>
-					<a class="footer__item footer__item--privacy" href="#">Политика конфиденциальности</a>
+					<a class="link footer__item footer__item--privacy" href="#">Политика конфиденциальности</a>
 					<p class="footer__item footer__item--disclaimer">Информация, размещенная на данной странице, не является публичной офертой</p>
 				</footer>
 			</main>
 
 			<!-- modal menu -->
-			<aside class="modal-menu modal-menu--closed modal-menu--width-handling">
+			<aside class="modal-menu modal-menu--desktop modal-menu--width-handling">
 				<ul class="menu modal-menu--side-margins--20">
 					<li class="menu__header-item">
-						<button class="menu__header-item--button menu__header-item--button-burger"></button>
+						<button class="menu__header-item--button menu__header-item--button-close"></button>
 					</li>
 					<li class="menu__header-item">
-						<a href="#">
+						<a class="link" href="#">
 							<img alt="Логотип ЦПС" src="./imgs/header-logo.svg" />
 						</a>
 					</li>
@@ -225,14 +225,14 @@
 						<button class="menu__header-item--button menu__header-item--button-search"></button>
 					</li>
 				</ul>
-				<a class="modal-menu__menu-item modal-menu__menu-item--active" href="#">Ремонт техники</a>
-				<a class="modal-menu__menu-item" href="#">Услуги и сервисы</a>
-				<a class="modal-menu__menu-item" href="#">Корпоративным клиентам</a>
-				<a class="modal-menu__menu-item" href="#">Продавцам техники</a>
-				<a class="modal-menu__menu-item" href="#">Партнерам</a>
-				<a class="modal-menu__menu-item" href="#">Производителям</a>
-				<a class="modal-menu__menu-item" href="#">Наши сервисные центры</a>
-				<a class="modal-menu__menu-item" href="#">Контакты</a>
+				<a class="link modal-menu__menu-item modal-menu__menu-item--active" href="#">Ремонт техники</a>
+				<a class="link modal-menu__menu-item" href="#">Услуги и сервисы</a>
+				<a class="link modal-menu__menu-item" href="#">Корпоративным клиентам</a>
+				<a class="link modal-menu__menu-item" href="#">Продавцам техники</a>
+				<a class="link modal-menu__menu-item" href="#">Партнерам</a>
+				<a class="link modal-menu__menu-item" href="#">Производителям</a>
+				<a class="link modal-menu__menu-item" href="#">Наши сервисные центры</a>
+				<a class="link modal-menu__menu-item" href="#">Контакты</a>
 
 				<ul class="menu modal-menu--side-margins--20 menu__header-item--push-down">
 					<li class="menu__header-item">
@@ -246,8 +246,8 @@
 					</li>
 				</ul>
 
-				<a class="modal-menu--side-margins--20 modal-menu--bottom-margin-15" href="mailto:mail@cps.com">mail@cps.com</a>
-				<a class="modal-menu--tel modal-menu--side-margins--20 modal-menu--bottom-margin-15" href="tel:+78008908900">8 800 890 89 00</a>
+				<a class="link modal-menu--side-margins--20 modal-menu--bottom-margin-15" href="mailto:mail@cps.com">mail@cps.com</a>
+				<a class="link modal-menu--tel modal-menu--side-margins--20 modal-menu--bottom-margin-15" href="tel:+78008908900">8 800 890 89 00</a>
 
 				<form action="#" class="lang-switch modal-menu--side-margins--20 modal-menu--bottom-margin-15">
 					<label>
@@ -267,8 +267,8 @@
 			<!-- end of modal menu -->
 
 			<!--	modal feedback-->
-			<div class="modal-menu modal-feedback modal-feedback--closed modal-menu--width-handling">
-				<button class="modal-feedback__btn menu__header-item--button menu__header-item--button-burger--close"></button>
+			<div class="modal-menu modal-feedback modal-menu--width-handling">
+				<button class="modal-feedback__btn menu__header-item--button menu__header-item--button-close"></button>
 
 				<h1 class="title title--top">Обратная связь</h1>
 
@@ -290,8 +290,8 @@
 
 				<p class="modal-feedback__text">
 					Нажимая “отправить”, вы даете согласие на
-					<a href="#" class="modal-feedback__link">обработку персональных данных</a> и соглашаетесь с нашей
-					<a href="#" class="modal-feedback__link">политикой конфиденциальности</a>
+					<a href="#" class="link link--red">обработку персональных данных</a> и соглашаетесь с нашей
+					<a href="#" class="link link--red">политикой конфиденциальности</a>
 				</p>
 
 				<button class="modal-feedback__btn-send" type="submit">Отправить</button>
@@ -300,7 +300,7 @@
 
 			<!--	modal call-->
 			<div class="modal-menu modal-feedback modal-menu--width-handling">
-				<button class="modal-feedback__btn menu__header-item--button menu__header-item--button-burger--close"></button>
+				<button class="modal-feedback__btn menu__header-item--button menu__header-item--button-close"></button>
 
 				<h1 class="title title--top">Заказать звонок</h1>
 
@@ -312,8 +312,8 @@
 
 				<p class="modal-feedback__text">
 					Нажимая “отправить”, вы даете согласие на
-					<a href="#" class="modal-feedback__link">обработку персональных данных</a> и соглашаетесь с нашей
-					<a href="#" class="modal-feedback__link">политикой конфиденциальности</a>
+					<a href="#" class="link link--red">обработку персональных данных</a> и соглашаетесь с нашей
+					<a href="#" class="link link--red">политикой конфиденциальности</a>
 				</p>
 
 				<button class="modal-feedback__btn-send" type="submit">Отправить</button>
