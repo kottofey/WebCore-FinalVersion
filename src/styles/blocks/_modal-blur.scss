@@ -1,0 +1,13 @@
+.modal-blur {
+	width: 100vw;
+	height: 100vh;
+	background-color: $modal-blur;
+	position: fixed;
+	top: 0;
+	z-index: 50;
+	display: none;
+
+	&--on {
+		display: block;
+	}
+}

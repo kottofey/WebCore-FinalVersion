@@ -1,5 +1,6 @@
-.modal-feedback {
+.modal-extra {
 	z-index: 20;
+	display: none;
 
 	@media screen and (width >= $screen-laptop) {
 		right: 0;
@@ -21,10 +22,6 @@
 	&__text {
 		font-size: 14px;
 		padding: 16px;
-	}
-
-	&__link {
-		color: $button-red;
 	}
 
 	&__btn-send {
@@ -53,8 +50,9 @@
 		}
 	}
 
-	&--closed {
-		display: none;
+	&--is-on {
+		display: flex;
+		z-index: 100;
 	}
 
 	&__btn {

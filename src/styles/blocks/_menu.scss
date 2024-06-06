@@ -62,7 +62,7 @@
 			background-image: url('../imgs/ic/ic_call.svg');
 		}
 
-		&--button-chat {
+		&--button-feedback {
 			background-image: url('../imgs/ic/ic_chat.svg');
 		}
 
@@ -89,8 +89,16 @@
 				display: none;
 			}
 
-			&--close {
+			&--opened {
 				background-image: url('../imgs/ic/ic_close.svg');
+			}
+		}
+
+		&--button-close {
+			background-image: url('../imgs/ic/ic_close.svg');
+
+			@media screen and (width >= $screen-desktop) {
+				display: none;
 			}
 		}
 

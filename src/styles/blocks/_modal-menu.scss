@@ -1,11 +1,10 @@
 .modal-menu {
 	position: absolute;
 	top: 0;
-	display: flex;
+	display: none;
 	flex-direction: column;
 	height: 100%;
 	background-color: $white;
-	z-index: 10;
 	box-shadow:
 		16px 0 52px 0 rgba(14, 24, 80, 0.2),
 		-2px 0 4px 0 rgba(69, 79, 126, 0.02);
@@ -22,6 +21,7 @@
 
 		&--active {
 			margin-left: 10px;
+			color: $gray;
 
 			&:first-child {
 				margin-top: 45px;
@@ -62,9 +62,14 @@
 		}
 	}
 
-	&--closed {
-		@media screen and (width < $screen-desktop) {
-			display: none;
+	&--desktop {
+		@media screen and (width >= $screen-desktop) {
+			display: flex;
 		}
+	}
+
+	&--is-on {
+		display: flex;
+		z-index: 100;
 	}
 }
