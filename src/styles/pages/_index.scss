@@ -1,5 +1,10 @@
+.body {
+	&--no-scroll {
+		//to be implemented in future
+	}
+}
+
 .page-wrapper {
-	//overflow: hidden;
 	max-width: 767px;
 	background-color: $gray-lighter;
 	position: relative;
@@ -35,8 +40,7 @@
 		font-size: 28px;
 		font-weight: bold;
 		display: flex;
-		padding-top: 24px;
-		padding-bottom: 18px;
+		padding: 24px 16px 18px 0;
 
 		&:before {
 			display: flex;

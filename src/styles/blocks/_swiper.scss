@@ -1,9 +1,8 @@
 .swiper {
-
 	&-wrapper {
 		// no BEM-style due to swiper specification
-			margin-top: 16px;
-		}
+		margin-top: 16px;
+	}
 
 	&__wrapper {
 		// here doubling styles for BEM-style due to swiper specification
@@ -17,11 +16,7 @@
 			bottom: 42px;
 			right: 0;
 			z-index: 1;
-			background: linear-gradient(
-					270deg,
-					$gray-lighter 16.836%,
-					$gray-lighter-transparent 100%
-			);
+			background: linear-gradient(270deg, $gray-lighter 16.836%, $gray-lighter-transparent 100%);
 
 			&--brands {
 				height: 74px;
@@ -42,7 +37,7 @@
 	position: relative;
 	margin: 10px auto;
 	// centering paginator //
-	// overriding styles //
+	// overriding swiper styles //
 	top: 0 !important;
 	bottom: 0 !important;
 	right: 0 !important;

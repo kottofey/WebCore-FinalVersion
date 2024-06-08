@@ -56,7 +56,6 @@
 
 		@include arrowIcon();
 		@media screen and (width >= $screen-laptop) {
-			//position: static;
 		}
 
 		&:after {

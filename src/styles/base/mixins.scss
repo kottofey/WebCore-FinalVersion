@@ -13,13 +13,11 @@
 	}
 
 	// positioning arrow icon in ::after
-		&:after {
-			top: 30px;
-			right: 30px;
-		}
+	&:after {
+		top: 30px;
+		right: 30px;
+	}
 }
-
-
 
 @mixin circleIcon() {
 	&:before {
@@ -31,7 +29,6 @@
 		height: 39px;
 		border: 1px solid $button-red;
 		border-radius: 50%;
-		// margin: auto 0 auto 168px;
 	}
 }
 

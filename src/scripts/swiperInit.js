@@ -1,4 +1,4 @@
-// html swiper init:
+// html swiper init procedure:
 // swiper global wrapper must have class '.swiper'
 // swiper wrapper must have class '.swiper__wrapper'
 // swiper card must have class '.swiper__card'
@@ -16,7 +16,6 @@ if (window.innerWidth < 768) {
 
 	wrappers.forEach((wrapper) => {
 		wrapper.className = 'swiper-wrapper';
-		// wrapper.classList.remove('repair-list__wrapper');
 	});
 
 	swiperPaginations.forEach((pag) => {

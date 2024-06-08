@@ -42,7 +42,6 @@
 
 		&--device {
 			height: 160px;
-			//flex-base 190+ paddings 16+16 + border 1+1 = 224px
 			flex: 0 0 190px;
 			background-color: $white;
 			padding: 16px;
@@ -64,7 +63,6 @@
 	}
 
 	&__title {
-		// padding: 16px 0 40px 32px;
 		padding: 16px;
 		margin: 16px 0 16px 16px;
 		text-transform: uppercase;

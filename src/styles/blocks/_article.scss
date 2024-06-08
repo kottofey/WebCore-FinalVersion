@@ -11,25 +11,18 @@
 		display: grid;
 		width: 100%;
 		position: relative;
-		// height: 242px;
 	}
 
 	@media screen and (width >= 1120px) {
 	}
 
 	&__content {
-		//display: flex;
-		//flex-direction: column;
 		grid-area: articleText;
 		height: 210px;
 		overflow: hidden;
 		margin: 0 16px;
 
 		transition: height linear 100ms;
-
-		@media screen and (768px <= width) {
-			//position: relative;
-		}
 
 		@media screen and (width >= 1120px) {
 			margin-left: 32px;
@@ -41,25 +34,15 @@
 
 		&--text {
 			margin-bottom: 16px;
-			//height: 90px;
 
 			@media screen and (768px <= width) {
 				line-height: 20px;
-				//max-width: 312px;
-				//height: 160px;
 			}
 
 			@media screen and (width >= 1120px) {
 				line-height: 20px;
-				//max-width: 490px;
-				//height: auto;
 			}
 		}
-
-		//
-		//&--top-content-margin {
-		//	margin-top: 32px;
-		//}
 
 		&--read-next {
 			grid-area: readNext;
