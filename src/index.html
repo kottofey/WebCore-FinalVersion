@@ -7,7 +7,7 @@
 		<title>CPS | Сервисный центр</title>
 	</head>
 
-	<body>
+	<body class="body">
 		<div class="page-wrapper">
 			<header class="header main--desktop-fix">
 				<div class="desktop-wrapper">
@@ -234,7 +234,7 @@
 				<a class="link modal-menu__menu-item" href="#">Наши сервисные центры</a>
 				<a class="link modal-menu__menu-item" href="#">Контакты</a>
 
-				<ul class="menu modal-menu--side-margins--20 menu__header-item--push-down">
+				<ul class="menu modal-menu--side-margins--20">
 					<li class="menu__header-item">
 						<button class="menu__header-item--button menu__header-item--button-call"></button>
 					</li>
@@ -268,19 +268,19 @@
 
 			<!--	modal feedback-->
 			<div class="modal-menu modal-extra modal-extra--feedback modal-menu--width-handling">
-				<button class="modal-extra__btn menu__header-item--button menu__header-item--button-close"></button>
+				<button class="modal-extra__btn menu__header-item--button menu__header-item--button-close" title="Закрыть"></button>
 
 				<h1 class="title title--top">Обратная связь</h1>
 
 				<form class="modal-extra__form" action="#">
 					<label class="modal-extra__label" for="modal-name">
-						<input type="text" name="modal-name" id="modal-name" placeholder="Имя" />
+						<input class="modal-extra__input" type="text" name="modal-name" id="modal-name" placeholder="Имя" />
 					</label>
 					<label class="modal-extra__label" for="modal-phone">
-						<input type="text" name="modal-phone" id="modal-phone" placeholder="Телефон" />
+						<input class="modal-extra__input" type="text" name="modal-phone" id="modal-phone" placeholder="Телефон" />
 					</label>
 					<label class="modal-extra__label" for="modal-email">
-						<input type="text" name="modal-email" id="modal-email" placeholder="Электронная почта" />
+						<input class="modal-extra__input" type="text" name="modal-email" id="modal-email" placeholder="Электронная почта" />
 					</label>
 
 					<label for="modal-message" class="modal-extra__label">
@@ -306,7 +306,7 @@
 
 				<form class="modal-extra__form" action="#">
 					<label class="modal-extra__label" for="modal-name">
-						<input type="text" name="modal-extra" id="modal-extra" placeholder="Телефон" />
+						<input class="modal-extra__input" type="text" name="modal-extra" id="modal-extra" placeholder="Телефон" />
 					</label>
 				</form>
 
