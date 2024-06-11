@@ -270,31 +270,31 @@
 			<div class="modal-menu modal-extra modal-extra--feedback modal-menu--width-handling">
 				<button class="modal-extra__btn menu__header-item--button menu__header-item--button-close" title="Закрыть"></button>
 
-				<h1 class="title title--top">Обратная связь</h1>
+				<h2 class="title title--top">Обратная связь</h2>
 
-				<form class="modal-extra__form" action="#">
-					<label class="modal-extra__label" for="modal-name">
-						<input class="modal-extra__input" type="text" name="modal-name" id="modal-name" placeholder="Имя" />
+				<form class="modal-extra__form" action="#" method="post">
+					<label class="modal-extra__label">
+						<input class="modal-extra__input" required type="text" name="modal-name" placeholder="Имя" />
 					</label>
-					<label class="modal-extra__label" for="modal-phone">
-						<input class="modal-extra__input" type="text" name="modal-phone" id="modal-phone" placeholder="Телефон" />
+					<label class="modal-extra__label">
+						<input class="modal-extra__input" required type="tel" minlength="11" name="modal-phone" placeholder="Телефон" />
 					</label>
-					<label class="modal-extra__label" for="modal-email">
-						<input class="modal-extra__input" type="text" name="modal-email" id="modal-email" placeholder="Электронная почта" />
+					<label class="modal-extra__label">
+						<input class="modal-extra__input" required type="email" name="modal-email" placeholder="Электронная почта" />
 					</label>
 
-					<label for="modal-message" class="modal-extra__label">
-						<textarea class="modal-extra__message" name="modal-message" id="modal-message" cols="30" rows="10" placeholder="Сообщение"></textarea>
+					<label class="modal-extra__label">
+						<textarea class="modal-extra__message" name="modal-message" cols="30" rows="10" placeholder="Сообщение"></textarea>
 					</label>
+
+					<p class="modal-extra__text">
+						Нажимая “отправить”, вы даете согласие на
+						<a href="#" class="link link--red">обработку персональных данных</a> и соглашаетесь с нашей
+						<a href="#" class="link link--red">политикой конфиденциальности</a>
+					</p>
+
+					<button class="modal-extra__btn-send" type="submit">Отправить</button>
 				</form>
-
-				<p class="modal-extra__text">
-					Нажимая “отправить”, вы даете согласие на
-					<a href="#" class="link link--red">обработку персональных данных</a> и соглашаетесь с нашей
-					<a href="#" class="link link--red">политикой конфиденциальности</a>
-				</p>
-
-				<button class="modal-extra__btn-send" type="submit">Отправить</button>
 			</div>
 			<!--	end of modal feedback-->
 
@@ -302,21 +302,21 @@
 			<div class="modal-menu modal-extra modal-extra--call modal-menu--width-handling">
 				<button class="modal-extra__btn menu__header-item--button menu__header-item--button-close"></button>
 
-				<h1 class="title title--top">Заказать звонок</h1>
+				<h2 class="title title--top">Заказать звонок</h2>
 
-				<form class="modal-extra__form" action="#">
-					<label class="modal-extra__label" for="modal-name">
-						<input class="modal-extra__input" type="text" name="modal-extra" id="modal-extra" placeholder="Телефон" />
+				<form class="modal-extra__form" action="#" method="post">
+					<label class="modal-extra__label">
+						<input class="modal-extra__input" required minlength="11" type="tel" name="modal-extra" placeholder="Телефон" />
 					</label>
+
+					<p class="modal-extra__text">
+						Нажимая “отправить”, вы даете согласие на
+						<a href="#" class="link link--red">обработку персональных данных</a> и соглашаетесь с нашей
+						<a href="#" class="link link--red">политикой конфиденциальности</a>
+					</p>
+
+					<button class="modal-extra__btn-send" type="submit">Отправить</button>
 				</form>
-
-				<p class="modal-extra__text">
-					Нажимая “отправить”, вы даете согласие на
-					<a href="#" class="link link--red">обработку персональных данных</a> и соглашаетесь с нашей
-					<a href="#" class="link link--red">политикой конфиденциальности</a>
-				</p>
-
-				<button class="modal-extra__btn-send" type="submit">Отправить</button>
 			</div>
 			<!--	end of modal call-->
 		</div>

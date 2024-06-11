@@ -5,6 +5,9 @@
 
 	@media screen and (width >= $screen-laptop) {
 		right: 0;
+		box-shadow:
+			16px 0 52px 0 rgba(14, 24, 80, 0.2),
+			-2px 0 4px 0 rgba(69, 79, 126, 0.02);
 	}
 
 	&__form {
@@ -23,6 +26,10 @@
 
 		border-radius: 6px;
 		border: 1px $gray-light solid;
+
+		&:valid {
+			color: $green;
+		}
 	}
 
 	&__message {

@@ -15,7 +15,7 @@ function modalMenuOn(modalMenu) {
 
 		// здесь я не придумал, как в css перекрывать основное меню
 		// без инлайновых стилей...
-		modalMenuDesktop.style.zIndex = 40;
+		modalMenuDesktop.classList.add('modal-menu--z40');
 	} else {
 		modalMenu.classList.add('modal-menu--is-on');
 	}
@@ -26,7 +26,7 @@ function modalMenuOff(modalMenu, blurOff) {
 		modalBlur.classList.remove('modal-blur--on');
 	}
 	modalMenu.classList.remove('modal-menu--is-on', 'modal-extra--is-on');
-	modalMenuDesktop.style.zIndex = 100;
+	modalMenuDesktop.classList.remove('modal-menu--z40');
 	body.classList.remove('body--no-scroll');
 }
 
